@@ -33,6 +33,7 @@ class Otp extends Component {
             toast.success('Successfully Logged IN!');
         }
          else toast.warn('Wrong OTP');
+         
     }
 
   render() { 
@@ -43,7 +44,7 @@ class Otp extends Component {
       <p className="sign" align="center">Enter the OTP</p>
       <form className="form1">
         <input className="un " type="text" align="center" placeholder="1234" onChange={(event)=>this.handleEvent(event)}/>
-        <Link to = "/Welcome" className="submit" align="center" onClick= {this.handleclick} >Submit the OTP</Link>    
+        <Link to = "/otp" className="submit" align="center" onClick= {this.handleclick} >Submit the OTP</Link>    
       </form>
 
       <ToastContainer
