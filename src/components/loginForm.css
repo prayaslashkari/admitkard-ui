@@ -45,6 +45,12 @@ form.form1 {
     padding-top: 40px;
 }
 
+
+.image {
+    display:block;
+    margin:auto;
+    padding-top: 20px;
+}
 .submit {
   cursor: pointer;
     border-radius: 5em;
@@ -60,6 +66,22 @@ form.form1 {
     font-size: 13px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
+
+.submit11 {
+    cursor: pointer;
+      border-radius: 5em;
+      color: #fff;
+      background: linear-gradient(to right, rgb(39, 94, 176), rgb(20, 100, 247));
+      border: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      margin-left: 28%;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
 
 
 a {
