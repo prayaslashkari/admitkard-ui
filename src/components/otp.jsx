@@ -9,6 +9,7 @@ import './loginForm.css'
 
 
 const otp = "1234"
+let url = "";
 
 class Otp extends Component {
   state = { 
@@ -28,11 +29,19 @@ class Otp extends Component {
 
     handleclick = () =>
     {
+      
         if(this.state.pin === otp)
         {
             toast.success('Successfully Logged IN!');
+            url = "/welcome"; 
+            console.log(url)
         }
-         else toast.warn('Wrong OTP');
+         else 
+         {
+           toast.warn('Wrong OTP, Retype the OTP');
+           url = "/otp"; 
+         
+          }
 
     }
 
@@ -43,8 +52,8 @@ class Otp extends Component {
       <img className = "image" src="https://d3toi7c4ip49i3.cloudfront.net/img/img-2/logo.png" alt=""/>
       <p className="sign" align="center">Enter the OTP</p>
       <form className="form1">
-        <input className="un " type="text" align="center" placeholder="1234" onChange={(event)=>this.handleEvent(event)}/>
-        <Link to = "/otp" className="submit11" align="center" onClick= {this.handleclick} >Submit the OTP</Link>    
+        <input className="un " type="text" align="center" placeholder="Enter - 1234" onChange={(event)=>this.handleEvent(event)}/>
+        <Link to = {(this.state.pin === otp) ? "/welcome" : "/otp" } className="submit11" align="center" onClick= {this.handleclick} >Submit the OTP</Link>    
       </form>
 
       <ToastContainer

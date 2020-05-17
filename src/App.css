@@ -3,6 +3,7 @@ body {
     height: 100vh;
     background: url("https://i.imgur.com/HgflTDf.jpg") 50% fixed;
     background-size: cover;
+    background-color: rgba(255, 0, 0, 0.3);
   }
 
 
