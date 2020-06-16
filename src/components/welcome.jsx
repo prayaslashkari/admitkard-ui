@@ -6,13 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 
 class Welcome extends Component {
-    componentDidMount(){
-        toast.success('Successfully Logged IN!');
 
+    componentDidMount(){
+        
+        console.log("Mounted")
     }
     
     render() { 
-
+        
+        toast.success('Successfully Logged IN!');
         return ( 
             <div id="login-container">
                 <div class="profile-img"></div>

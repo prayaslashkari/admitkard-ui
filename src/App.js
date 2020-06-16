@@ -7,6 +7,7 @@ import LoginForm from './components/loginForm';
 import Otp from './components/otp';
 import Welcome from './components/welcome';
 
+
 class App extends Component {
 
   render() { 
@@ -28,8 +29,6 @@ class App extends Component {
       
       </Switch>
       </React.Fragment>
-      
-      
       );
   }
 }
